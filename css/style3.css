@@ -1,0 +1,127 @@
+/* using flexbox to handle layout */
+:root{
+    --prim:blue;
+    --sec: darkgoldenrod;
+    --ter:white;
+    --font:"SUSE",sans-serif;
+}
+
+*{box-sizing: border-box;}
+
+/* tag names */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--tert)
+} 
+
+/* classes */
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colophon{
+    text-align: center;
+}
+
+.container{
+    margin: 0 auto;
+    width: 94%;
+    border: 1px solid red;
+}
+
+.form{
+    text-align: right;
+    padding-top: 15px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.row{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+}
+
+.search-label{
+    display: none;
+}
+
+.section{
+    padding: 20px 0;
+}
+
+.text{
+    padding: 0 15 px;
+}
+
+/* ids */
+
+#block1, #block2{
+    width: 45%;
+    border: 1px solid green;
+    padding: 0 15px;
+
+
+}
+
+#blocktext2, #figure1{
+    width: 45%;
+    border: 1px solid purple;
+
+}
+/*
+
+#blocktext3, #blocktex4{
+    padding: 0 15px;
+} */
+
+#block5, #block6, #block7{
+    width: 30%;
+    border: 1px solid orangered;
+}
+
+
+#figure2{
+    text-align: center;
+}
+
+
+
+
+#header{
+    width: 100%;
+    padding: 8px 0;
+}
+
+#header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#myname, #topnav, .form{
+    border: 1px solid blue;
+    margin: 0;
+    width: 30%;
+}   
+
+#row1{
+    flex-direction: row-reverse;
+}
+
+#section3 .container{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+    
