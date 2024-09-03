@@ -114,6 +114,13 @@ body{
     width: 30%;
 }   
 
+#myname{
+
+    font-family: var(--font);
+    font-size: 48px;
+    color: var(--prim)
+}
+
 #row1{
     flex-direction: row-reverse;
 }
